@@ -43,6 +43,25 @@ const validateInputs = () => {
         showAlert("Exit Date cannot be lower than Entry Date", "danger");
         return false;
     }
+    let unix = Date.now();
+    let date = new Date(unix);
+    date = date.getDate();
+
+    let entryDatetoday = entryDate.split("-")[ 2 ];
+    entryDatetoday = Number(entryDatetoday);
+
+    if (entryDatetoday < date) {
+        showAlert("Entry Date cannot be lower than Today", "danger");
+        return false;
+    }
+
+    for (let i = 0; i < entries.length; i++) {
+        console.log('licensePlate',licensePlate,entries[ i ].licensePlate)
+        if (licensePlate === entries[ i ].licensePlate) {
+            showAlert(`${licensePlate} Car has already parked`, "danger");
+            return false;
+        }
+    }
 
     return true;
 };
@@ -50,7 +69,7 @@ const validateInputs = () => {
 //Event Add
 document.querySelector("#entryForm").addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("clicked");
+
     //Declare Variables
     const owner = document.querySelector("#owner").value;
     const car = document.querySelector("#car").value;
@@ -64,7 +83,6 @@ document.querySelector("#entryForm").addEventListener("submit", (e) => {
     //Instatiate Entry
     const entry = Entry(owner, car, licensePlate, entryDate, exitDate);
 
-    console.log("Entry", entry);
     entries.push(entry);
     addEntries(entries);
 

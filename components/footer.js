@@ -1,7 +1,7 @@
 function footer(){
     return `
     <footer class="footer">
-      <div>copyright @Akshay&Aakash</div>
+      <div>&copy  copyright Akshay   &   Aakash</div>
     </footer>
     `
 }

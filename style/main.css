@@ -62,10 +62,36 @@
 }
 /* carousel CSS*/
 
+/* main  */
+
+.text-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px, 100px, 0px, 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    justify-content:space-around;
+    gap: 5px;
+    margin: 10px;
+    padding: 50px;
+}
+
+.card img{
+    height: 300px;
+    width: 500px;
+    padding: 5px;
+}
+/* main  */
 
 /* footer css  */
 .footer{
-    margin-top: 189px;
+    margin-top: 10px;
     padding: 1rem;
     text-align: center;
     display: flex;
@@ -73,7 +99,8 @@
     background-color: #262626;
     color: white;
     width: 100%;
-    top: 500px;
     bottom: 0px;
+    letter-spacing: 10px;
 }
+
 /* footer css  */

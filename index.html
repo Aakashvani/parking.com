@@ -32,6 +32,8 @@
       </div>
     </div>
 
+    <!-- mainBodyHome  (importing) -->
+    <div id="mainBody_container"></div>
     
 
     <!-- footer  (importing) -->
@@ -44,11 +46,17 @@
   let nav_container = document.getElementById("nav_container");
   nav_container.innerHTML = nav();
 
+   //importing mainBody part
+   import main from "./components/mainBodyHome.js";
+  let mainBody_container = document.getElementById("mainBody_container");
+  mainBody_container.innerHTML = main();
+
   // importing footer part
   import footer from "./components/footer.js";
   let footer_container = document.getElementById("footer_container");
   footer_container.innerHTML = footer();
 </script>
+
 
 <script>
   //slide-show banner imageURL as Array of Object
@@ -65,7 +73,6 @@
       url: "./images/slide3.jpg",
     },
   ];
-
 
   let slideShow = document.getElementById("imgSlide");
 

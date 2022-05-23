@@ -1,0 +1,18 @@
+parking.com
+
+parking ticket-->
+1. parking floor [math.random]
+2.parkinh lot number
+3.user name
+4.user vel. details
+5.date , time, [entry time - exit time]
+6.payment details - amount
+
+parking input box -->
+1.user name
+2.vel. details like car number 
+3.entry and exit time and date 
+4.prefrence of floor **
+
+
+

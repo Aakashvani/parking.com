@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color: rgba(2, 97, 250, 0.849);
+    background-color: #262626;
 }
 
 #header-logo {
@@ -24,12 +24,12 @@ header {
 #btnOne:hover {
     box-shadow: none;
     outline: none;
-    background-color: green;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #tableHead {
-    background-color: rgb(25, 120, 197);
+    background-color: #262626;
 }
 
 #searchInput {

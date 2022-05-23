@@ -22,6 +22,8 @@ function nav() {
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
+            <li class=""><a href="../html/parkingInput.html">Park Your Vehicle</a></li>
+            <li class=""><a href="#"></a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
